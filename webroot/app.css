@@ -1,0 +1,160 @@
+/* Main Site */
+body {
+    padding-top: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main {
+    margin-top: 25px;
+}
+
+/* StatusMessage */
+#statusMessage{
+    text-align: center;
+}
+
+/* Board -https://coderbyte.com/tutorial/create-a-tic-tac-toe-game-using-html-css-and-jquery-*/
+#board {
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.free-field {
+    color: white;
+}
+
+#board tr td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #b3b3b3;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background: white;
+}
+    /* top row */
+#board tr td.top {
+    border-top: none;
+}
+#board tr td.top:nth-child(1) {
+    border-left: none;
+}
+#board tr td.top:nth-child(3) {
+    border-right: none;
+}
+/* middle row */
+#board tr td.middle:nth-child(1) {
+    border-left: none;
+}
+#board tr td.middle:nth-child(3) {
+    border-right: none;
+}
+
+/* bottom row */
+#board tr td.bottom {
+    border-bottom: none;
+}
+#board tr td.bottom:nth-child(1) {
+    border-left: none;
+}
+#board tr td.bottom:nth-child(3) {
+    border-right: none;
+}
+
+#board tr td:hover {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+
+/* Jumbotron */
+.jumbotron{
+    text-align: center;
+    color: #334046;
+}
+
+/* Spinner -http://tobiasahlin.com/spinkit/-*/
+.sk-cube-grid {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: white;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
+}
+
+
+.animated {
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+}
+
+.noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
